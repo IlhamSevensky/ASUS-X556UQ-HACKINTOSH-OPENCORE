@@ -158,7 +158,7 @@
 
 - You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.
 
-<img title="" src="Screenshot/Screen%20Shot%202020-08-01%20at%2012.41.54.png" alt="" width="695" data-align="center">
+![](Screenshot/Screen%20Shot%202020-08-01%20at%2012.41.54.png)
 
 ---
 
