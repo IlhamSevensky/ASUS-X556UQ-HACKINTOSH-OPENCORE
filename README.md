@@ -1,10 +1,16 @@
-# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.5 (OpenCore)
+# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 (OpenCore)
 
 ---
 
 ### Screenshot
 
 ---
+
+- Catalina 10.15.6 (Update)
+
+![](Screenshot/Screen%20Shot%202020-08-01%20at%2012.42.25.png)
+
+- Catalina 10.15.5
 
 ![](Screenshot/Screen%20Shot%202020-07-31%20at%2022.21.11.png)
 
@@ -13,8 +19,6 @@
 ![](Screenshot/Screen%20Shot%202020-07-31%20at%2022.27.29.png)
 
 ![](Screenshot/Screen%20Shot%202020-07-31%20at%2022.28.18.png)
-
-
 
 ### Technical Specifications
 
@@ -150,9 +154,11 @@
 
 **<mark>Note : </mark>**
 
-The compiled SSDT patch has not used checking `If (_OSI ("Darwin")) {}`, so it might affect other operating systems when using dual boot / more.
+- The compiled SSDT patch has not used checking `If (_OSI ("Darwin")) {}`, so it might affect other operating systems when using dual boot / more. (but I only use single boot only)
 
-(but I only use single boot only)
+- You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.
+
+<img title="" src="Screenshot/Screen%20Shot%202020-08-01%20at%2012.41.54.png" alt="" width="581" data-align="center">
 
 ---
 
