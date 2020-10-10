@@ -120,9 +120,7 @@
   
   [VoodooI2C + VoodooI2CELAN (Need GPIO Pinning)](https://github.com/alexandred/VoodooI2C)
   
-  IO80211Family.kext (For ATH9565)
-  
-  ATH9KInjector.kext
+  [HS80211Family.kext + AirPortAtheros40.kext (ATH9565)](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
 
 ### SSDT Patch
 
@@ -156,9 +154,7 @@
 
 - The compiled SSDT patch has not used checking `If (_OSI ("Darwin")) {}`, so it might affect other operating systems when using dual boot / more. (but I only use single boot only)
 
-- You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.
-
-![](Screenshot/Screen%20Shot%202020-08-01%20at%2012.41.54.png)
+- ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.~~
 
 ---
 
