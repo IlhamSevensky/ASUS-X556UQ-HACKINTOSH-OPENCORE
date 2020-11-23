@@ -1,10 +1,14 @@
-# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 (OpenCore)
+# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 - Big Sur 11.0.1 (OpenCore)
 
 ---
 
 ### Screenshot
 
 ---
+
+- Big Sur 11.0.1 (Update)
+
+![](Screenshot/Screen%20Shot%202020-11-24%20at%2000.43.34.png)
 
 - Catalina 10.15.6 (Update)
 
@@ -30,7 +34,7 @@
 | Memory            | 1x 4 GB DDR4 2133 Mhz + 1x 8 GB DDR4 2133 Mhz                                                                                            |
 | Storage           | SSD M.2 SATA Silicon Power 240 GB                                                                                                        |
 | Video             | Integrated Intel HD 520 + NVIDIA 940MX                                                                                                   |
-| Wi-Fi + Bluetooth | Qualcomm Atheros 9565                                                                                                                    |
+| Wi-Fi + Bluetooth | ~~Qualcomm Atheros 9565~~ Replaced by BCM94360NG                                                                                         |
 | Ethernet          | Realtek RTL8111                                                                                                                          |
 | Audio             | Realtek ALC255                                                                                                                           |
 | Touchpad          | ELAN 1000 I2C Interface                                                                                                                  |
@@ -66,15 +70,17 @@
 
 ✅ Restart, Sleep, Shutdown
 
+✅ Wifi and Bluetooth
+
 ### What Works (with Notes)
 
 ---
 
 ⚠️ Audio (Internal mic work but not auto switchable)
 
-⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)
+~~⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)~~
 
-⚠️ Wi-Fi (Cosmetically I notice the WiFi signal tree will randomly drop down to one or no bars and randomly full strength. Allthough this happens I saw no performance drops when this happens.)
+⚠️ ~~Wi-Fi (Cosmetically I notice the WiFi signal tree will randomly drop down to one or no bars and randomly full strength. Allthough this happens I saw no performance drops when this happens.)~~
 
 ### Does Not Work
 
@@ -108,19 +114,19 @@
   
   [CPUFriend](https://github.com/acidanthera/CPUFriend) + [CPUFriendDataProvider](https://www.olarila.com/topic/5693-guide-ssdt-with-pikes-pm-script-and-use-with-cpufriend/)
   
-  NoTouchID
+  ~~NoTouchID~~
   
   [RealtekRTL8111](https://bitbucket.org/RehabMan/os-x-realtek-network/downloads/)
   
   [VirtualSMC + All Plugins](https://github.com/acidanthera/VirtualSMC)
   
-  [VoodooPS2Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
+  [VoodooPS2Controller ](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
   
   [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
   
   [VoodooI2C + VoodooI2CELAN (Need GPIO Pinning)](https://github.com/alexandred/VoodooI2C)
   
-  [HS80211Family.kext + AirPortAtheros40.kext (ATH9565)](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)
+  ~~[HS80211Family.kext + AirPortAtheros40.kext (ATH9565)](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)~~
 
 ### SSDT Patch
 
@@ -153,6 +159,8 @@
 **<mark>Note : </mark>**
 
 - The compiled SSDT patch has not used checking `If (_OSI ("Darwin")) {}`, so it might affect other operating systems when using dual boot / more. (but I only use single boot only)
+
+- Just activate one of the VoodooInput from VoodooI2C or VoodooPS2Controller in config.plist (so that it doesn't conflict)
 
 - ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.~~
 
