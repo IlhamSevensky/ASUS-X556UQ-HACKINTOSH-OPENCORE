@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>BuildAliasOf</key>
-	<string>AirPortDriverAtheros9388</string>
+	<string>AppleAHCI</string>
 	<key>BuildVersion</key>
-	<string>11533</string>
+	<string>1534</string>
 	<key>CFBundleShortVersionString</key>
-	<string>7.0</string>
+	<string>341.0.2</string>
 	<key>CFBundleVersion</key>
-	<string>700.74.5</string>
+	<string>341.0.2</string>
 	<key>ProjectName</key>
-	<string>AirPortDriverAtheros9388</string>
+	<string>AppleAHCI</string>
 	<key>SourceVersion</key>
-	<string>700074005000000</string>
+	<string>341000002000000</string>
 </dict>
 </plist>
