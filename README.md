@@ -127,6 +127,8 @@
   [VoodooI2C + VoodooI2CELAN (Need GPIO Pinning)](https://github.com/alexandred/VoodooI2C)
   
   ~~[HS80211Family.kext + AirPortAtheros40.kext (ATH9565)](https://www.insanelymac.com/forum/files/file/1008-io80211family-modif/)~~
+  
+  [VerbStub](https://github.com/hackintosh-stuff/ComboJack)
 
 ### SSDT Patch
 
@@ -161,6 +163,8 @@
 - The compiled SSDT patch has not used checking `If (_OSI ("Darwin")) {}`, so it might affect other operating systems when using dual boot / more. (but I only use single boot only)
 
 - Just activate one of the VoodooInput from VoodooI2C or VoodooPS2Controller in config.plist (so that it doesn't conflict)
+
+- In macOS Big Sur. Internal mic works, but mic for combo jack doesn't work (in previous macOS version it works). for workaround you can follow the following tutorial [ComboJack support for ALC256/ALC255](https://github.com/hackintosh-stuff/ComboJack)
 
 - ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.~~
 
