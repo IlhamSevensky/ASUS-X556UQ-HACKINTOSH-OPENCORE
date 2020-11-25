@@ -78,9 +78,9 @@
 
 ⚠️ Audio (Internal mic work but not auto switchable)
 
-~~⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)~~
+~~⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware) [AR9565]~~
 
-⚠️ ~~Wi-Fi (Cosmetically I notice the WiFi signal tree will randomly drop down to one or no bars and randomly full strength. Allthough this happens I saw no performance drops when this happens.)~~
+⚠️ ~~Wi-Fi (Cosmetically I notice the WiFi signal tree will randomly drop down to one or no bars and randomly full strength. Allthough this happens I saw no performance drops when this happens.) [AR9565]~~
 
 ### Does Not Work
 
@@ -166,7 +166,7 @@
 
 - In macOS Big Sur. Internal mic works, but mic for combo jack doesn't work (in previous macOS version it works). for workaround you can follow the following tutorial [ComboJack support for ALC256/ALC255](https://github.com/hackintosh-stuff/ComboJack)
 
-- ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update.~~
+- ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update. [AR9565]~~
 
 ---
 
