@@ -1,10 +1,14 @@
-# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 - Big Sur 11.0.1 (OpenCore)
+# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 - Big Sur 11.2.3 (OpenCore)
 
 ---
 
 ### Screenshot
 
 ---
+
+- Big Sur 11.2.3 (Update)
+
+![](Screenshot/Screen%20Shot%202021-03-13%20at%2003.58.45.png)
 
 - Big Sur 11.0.1 (Update)
 
