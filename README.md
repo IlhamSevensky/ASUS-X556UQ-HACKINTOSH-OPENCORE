@@ -1,4 +1,4 @@
-# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.6 - Big Sur 11.2.3 (OpenCore)
+# ASUS A556U (X556UQ) - Hackintosh Catalina 10.15.5 - Big Sur 11.5.1 (OpenCore)
 
 ---
 
@@ -6,7 +6,15 @@
 
 ---
 
+- Big Sur 11.5.1 (Update)
+
+![](/Users/ilham/Desktop/ASUS-X556UQ-Catalina-Hackintosh(Open%20Core)/Screenshot/Screen%20Shot%202021-08-03%20at%2012.11.47.png)
+
 - Big Sur 11.2.3 (Update)
+
+![](file:///Users/ilham/Desktop/ASUS-X556UQ-Catalina-Hackintosh(Open Core)/Screenshot/Screen%20Shot%202021-03-13%20at%2003.58.45.png)
+
+- Big Sur 11.0.1 (Update)
 
 ![](Screenshot/Screen%20Shot%202021-03-13%20at%2003.58.45.png)
 
@@ -173,6 +181,8 @@
 - In macOS Big Sur. Internal mic works, but mic for combo jack doesn't work (in previous macOS version it works). for workaround you can follow the following tutorial [ComboJack support for ALC256/ALC255](https://github.com/hackintosh-stuff/ComboJack)
 
 - ~~You need to disable ATH9Injector.kext and IO80211Family.kext on config.plist to prevent kernel panic when updating MacOS then enable again after update. [AR9565]~~
+
+- Starting from opencore version `0.7.2` there is additional option to set `minDate`(minimum allowed APFS driver date) and `minVersion` (minimum allowed APFS driver version). By default it will be set to 0 for security purposes. but it should be noted if you use an operating system below the bigsur version and use the default value. you can see it in more detail in the opencore configuration documentation.
 
 ---
 
